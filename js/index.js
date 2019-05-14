@@ -1,4 +1,9 @@
 // Your code goes here
+let navlinks = document.addEventListener('click', (event) => {
+  event.preventDefault();
+})
+
+
 function toggleStyle(element, styleName, value, defaultVal) {
   if (element.style[styleName] !== value) {
     element.style[styleName] = value;

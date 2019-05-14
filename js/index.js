@@ -125,11 +125,11 @@ img2.addEventListener('wheel', (event) => {
 
 
 //bubbling - need to include stopPropagation to prevent bubbling
-document.querySelector('.content-pick :nth-child(3) .btn').addEventListener('click', (event) => {
-  event.stopPropagation();
-  alert('child clicked');
-})
+// document.querySelector('.content-pick :nth-child(3) .btn').addEventListener('click', (event) => {
+//   event.stopPropagation();
+//   alert('child clicked');
+// })
 
-document.querySelector('.content-pick').addEventListener('click', (event) => {
-  alert('parent clicked');
-})
+// document.querySelector('.content-pick').addEventListener('click', (event) => {
+//   alert('parent clicked');
+// })

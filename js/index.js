@@ -30,8 +30,6 @@ window.addEventListener('scroll', (event) => {
   prevScrollpos = currentScrollPos;
 })
 
-
-
 //Blur the destination image when mouse is over image
 let destiImg = document.querySelector('.content-destination img');
 
@@ -124,3 +122,4 @@ img2.addEventListener('wheel', (event) => {
     img2.style.width = '100%';
   }
 })
+

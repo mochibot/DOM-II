@@ -34,11 +34,11 @@ window.addEventListener('scroll', (event) => {
 let destiImg = document.querySelector('.content-destination img');
 
 destiImg.addEventListener('mouseover', (event) => {
-  destiImg.style.filter = 'blur(3px)';
+  event.target.style.filter = 'blur(3px)';
 })
 
 destiImg.addEventListener('mouseleave', (event) => {
-  destiImg.style.filter = 'blur(0)';
+  event.target.style.filter = 'blur(0)';
 })
 
 //Change the text color when either 'p' or 'b' is pressed
@@ -71,7 +71,7 @@ let img1 = document.querySelector('.img-content img');
 img1.setAttribute('draggable', 'true');
 
 img1.addEventListener('drag', (event) => {
-  img1.style.display = 'none';
+  event.target.style.display = 'none';
 })
 
 //Make text above disappear when first button is double-clicked
@@ -117,9 +117,9 @@ img2.addEventListener('wheel', (event) => {
   event.preventDefault();
   let scale = 1;
   if (event.deltaY < 0) {
-    img2.style.width = '50%';
+    event.target.style.width = '50%';
   } else {
-    img2.style.width = '100%';
+    event.target.style.width = '100%';
   }
 })
 
